@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0px;
+			background-color: rgb(235, 214, 214);
+		}
+		#all{
+			width: 800px;
+			margin: auto;
+		}
+		header p{
+			background-color: #fff;
+		}
+		header ul a{
+			text-decoration: none;
+			display: block;
+			padding: 10px 0px;
+			background-color: rgb(240, 255, 24);
+			color: red;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-size: 15px;
+			border: 1px solid #000;
+			border-left: none;
+			border-right: none;
+		}
+		header ul li{
+			list-style-type: none;
+			display: table-cell;
+			text-align: center;
+			position: relative;
+		}
+		header ul li a:after{
+			content: "";
+			display: block;
+			position: absolute;
+			border-right: 1px dashed #000;
+			height: 100%;
+			top: 0px;
+		}
+		header ul li:first-child a:after{
+			display: none;
+		}
+		header ul{
+			display: table;
+			padding-left: 0%;
+			width: 100%;
+			margin: 10px 0px;
+			
+			
+		}
+		header ul a:hover{
+			color: black;
+			background-color: rgb(182, 182, 250);
+		}
+		#first{
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-left: 1px solid #000;
+		}
+		#last{
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			border-right: 1px solid #000;
+		}
+		#first:hover{
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+		#last:hover{
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		.one{
+			position: relative;
+			background: url(images/fon.png);
+			background-repeat: no-repeat;
+			box-sizing:border-box;
+			height: 311px;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		.oneone{
+			position: absolute;
+			width: 250px;
+			color:rgb(240, 255, 24);
+			top: 100px;
+			right: 100px;
+			background: transparent;
+		}
+		.two{
+			position: absolute;
+			width: 90px;
+			color:rgb(15, 15, 15);
+			top: 200px;
+			right: 100px;
+			background: transparent;
+			font-weight: 900;
+			font-size: 20px;
+			background: url(images/center_but.png);
+			text-align: center;
+			height: 27px;
+		}
+		.two:after{
+			background: url(images/right_but.png);
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0px;
+			right: -16px;
+			width: 16px;
+			height: 27px;
+		}
+		.two:before{
+			background: url(images/left_but.png);
+			content: "";
+			display: block;
+			position: absolute;
+			margin-right: 100px;
+			width: 12px;
+			height: 27px;
+			top: 0px;
+			left: -12px;
+		}
+		.sec1{
+			float: left;
+			background: url(images/1-t1.png) 180px 10px;
+			background-repeat: no-repeat;
+		}
+		.sec2{
+			float: right;
+			margin-bottom: 10px;
+			background: url(images/1-t2.png) 180px 10px;
+			background-repeat: no-repeat;
+		}
+		.sec3{
+			margin-left: 33.6%;
+			background: url(images/1-t3.png) 180px 10px;
+			background-repeat: no-repeat;
+		}
+		.allsec{
+			width: 30%;
+			padding: 70px 10px 50px 10px;
+			border: 1px solid #000;
+			border-radius: 10px;
+			height: 450px;
+			position: relative;
+		}
+		.section{
+			margin: 10px 0px;
+			text-align: justify;
+		}
+		footer{
+			clear:both;
+			background-color: rgb(250, 127, 127);
+			text-align: center;
+			border-radius: 10px;
+			padding: 10px;
+			margin-top: 10px;
+		}
+		.allsec a{
+			display: block;
+			border: 1px solid #000;
+			background-color: rgb(255, 17, 176);
+			padding: 10px;
+			width: 80px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 10px;
+			bottom: 10px;
+			position: absolute;
+			right: 10px;
+		}
+		.allsec h3{
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: orange;
+			font-size: 25px;
+			position: absolute;
+			top:20px;
+		}
+		.allsec:after{
+			content: "";
+			width: 100%;
+			position: absolute;
+			border-bottom: 1px dotted #000;
+			top: 55px;
+			left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+	<header>
+		<p><img src="images/logo.jpg" alt=""></p>
+
+		<ul>
+	<li><a id="first" href="#">First</a></li>
+	<li><a href="#">Second</a></li>
+	<li><a href="#">tri</a></li>
+	<li><a href="#">First</a></li>
+	<li><a href="#">tri</a></li>
+	<li><a href="#">First</a></li>
+	<li><a href="#">tri</a></li>
+	<li><a href="#">First</a></li>
+	<li><a id="last" href="#">tri</a></li>
+</ul>
+	</header>
+
+	<main>
+		<div class="one">
+		<p class="oneone">Заголовок
+		текст текст текст текст
+		текст2 текст2 текст2 текст2</p>
+
+		<a href="ya.ru"><div class="two">read next</div></a>  
+	</div>
+
+	<div class="section">
+		<div class="sec1 allsec">
+			 <h3>Our Seminars</h3>
+			Lorem put input setup
+Накануне российский президент на форуме Общероссийского народного фронта (ОНФ) заявил, что Рос сия как "независимый, суверенный", знающий себе цену и имеющий свои собственные интересы" игрок мало кому нужна. По словам российского лидера, Москва не допустит утраты государственного суверенитета. В то же время президент
+	<a href="">Read next</a>
+		</div>
+				
+		<div class="sec2 allsec">
+			<h3>Our Seminars</h3>
+			Lorem put input setup
+		Накануне российский президент на форуме Общероссийского народного фронта (ОНФ) заявил, что Рос сия как "независимый, суверенный", знающий себе цену и имеющий свои собственные интересы" игрок мало кому нужна. По словам российского лидера, Москва не допустит утраты государственного суверенитета. В то же время президент
+		Lorem put input setup
+		Накануне российский президент на форуме Общероссийского народного фронта (ОНФ) заявил, что Рос сия как "независимый, суверенный", знающий себе цену и имеющий свои собственные интересы" игрок мало кому нужна. По словам российского лидера, Москва не допустит утраты государственного суверенитета. В то же время президент
+		<a href="">Read next</a>
+		</div>
+
+		<div class="sec3 allsec">
+			<h3>Our Seminars</h3>
+			55555Lorem put input setup
+Накануне российский президент на форуме Общероссийского народного фронта (ОНФ) заявил, что Рос сия как "независимый, суверенный", знающий себе цену и имеющий свои собственные интересы" игрок мало кому нужна. По словам российского лидера, Москва не допустит утраты государственного суверенитета. В то же время президент
+		<a href="">Read next</a>
+		</div>
+	</div>
+	</main>
+
+	<footer>
+		2008 Solutions Online
+	</footer>
+</div>
+</body>
+</html>
